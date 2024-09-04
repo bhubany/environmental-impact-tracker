@@ -93,6 +93,6 @@ const toggleHamburgerButton = () => {
 
 <style>
 .router-link-active {
-  @apply font-bold md:text-white md:text-green-800 p-0 m-0;
+  @apply font-bold md:text-white p-0 m-0;
 }
 </style>
