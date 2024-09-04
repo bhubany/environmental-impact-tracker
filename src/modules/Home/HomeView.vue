@@ -1,5 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import HeroComponent from '@/modules/Home/components/HeroComponent.vue'
+</script>
 
 <template>
-  <h1>From Home View</h1>
+  <HeroComponent />
 </template>

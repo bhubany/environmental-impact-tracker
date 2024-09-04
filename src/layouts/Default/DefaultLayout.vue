@@ -7,7 +7,7 @@ import HeaderComponent from '@/layouts/Default/components/HeaderComponent.vue'
   <div class="flex flex-col min-h-screen">
     <HeaderComponent />
     <main class="flex-1 bg-green-100">
-      <div class="w-full max-w-screen-xl mx-auto">
+      <div class="w-full mx-auto">
         <router-view />
       </div>
     </main>

@@ -1,6 +1,6 @@
 import DefaultLayout from '@/layouts/Default/DefaultLayout.vue'
+import homeRoute from '@/modules/Home/router'
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 
 const isAuthenticated = () => {
   return localStorage.getItem('token') !== null
@@ -14,18 +14,12 @@ const router = createRouter({
       name: 'public',
       component: DefaultLayout,
       redirect: '/',
-      children: [
-        {
-          path: '/',
-          name: 'home',
-          component: HomeView
-        }
-      ]
+      children: [...homeRoute]
     },
     {
       path: '/:catchAll(.*)',
       name: 'not-found',
-      component: () => import('../modules/NotFound/NotFoundView.vue')
+      component: () => import('@/modules/NotFound/NotFoundView.vue')
     }
   ]
 })
