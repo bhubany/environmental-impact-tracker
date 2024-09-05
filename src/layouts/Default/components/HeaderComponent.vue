@@ -21,6 +21,10 @@ const menus: MenuType[] = [
     title: 'About'
   },
   {
+    path: '/news',
+    title: 'News'
+  },
+  {
     path: '/map',
     title: 'Map'
   },
