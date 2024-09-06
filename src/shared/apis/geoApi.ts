@@ -1,40 +1,6 @@
 import { useApi } from '@/composable/useApi'
 import { config } from '@/config'
-
-export type UserCoordinateTypes = {
-  latitude: number
-  longitude: number
-}
-
-export type IpLocationPosition = {
-  ip: string
-  network: string
-  version: string
-  city: string
-  region: string
-  region_code: string
-  country: string
-  country_name: string
-  country_code: string
-  country_code_iso3: string
-  country_capital: string
-  country_tld: string
-  continent_code: string
-  in_eu: boolean
-  postal: number
-  latitude: number
-  longitude: number
-  timezone: string
-  utc_offset: string
-  country_calling_code: string
-  currency: string
-  currency_name: string
-  languages: string
-  country_area: number
-  country_population: number
-  asn: string
-  org: string
-}
+import type { Coordinate, IpLocationPosition } from '@/shared/types/geo'
 
 export const getUserPosition = (): Promise<GeolocationPosition | null> => {
   return new Promise((resolve, reject) => {
@@ -68,7 +34,7 @@ export const getLocationByIp = async (): Promise<IpLocationPosition | null> => {
   }
 }
 
-export const getUserCoordinates = async (): Promise<UserCoordinateTypes> => {
+export const getUserCoordinates = async (): Promise<Coordinate> => {
   try {
     const position = await getUserPosition()
     if (position && 'coords' in position) {

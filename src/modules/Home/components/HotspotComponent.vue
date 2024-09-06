@@ -1,15 +1,17 @@
 <script setup lang="ts">
 import ContentWrapper from '@/components/ContentWrapper.vue'
 import GoogleMapsComponent from '@/components/GoogleMapsComponent.vue'
-import { getUserCoordinates, type UserCoordinateTypes } from '@/shared/apis/geoApi'
+import { getUserCoordinates } from '@/shared/apis/geoApi'
+import { fetchWeatherData } from '@/shared/apis/weatherApi'
+import type { Coordinate } from '@/shared/types/geo'
 import { onMounted, ref } from 'vue'
 
-const userCoordinates = ref<UserCoordinateTypes>({ latitude: 0, longitude: 0 })
+const userCoordinates = ref<Coordinate>({ latitude: 0, longitude: 0 })
 
 onMounted(async () => {
   userCoordinates.value = await getUserCoordinates()
-  console.log(userCoordinates.value.latitude)
-  console.log(userCoordinates.value.longitude)
+  // const res = await fetchWeatherData(userCoordinates.value)
+  // console.log(res)
 })
 </script>
 <template>

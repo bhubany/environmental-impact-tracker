@@ -1,126 +1,138 @@
 <script lang="ts" setup>
-import { type UserCoordinateTypes } from '@/shared/apis/geoApi'
-import { useGeolocation } from '@vueuse/core'
-import leaflet from 'leaflet'
+import { weatherDataNepal } from '@/shared/constants/weather'
+import { type Coordinate } from '@/shared/types/geo'
+import L from 'leaflet'
+import 'leaflet.heat'
 import 'leaflet/dist/leaflet.css'
-import { onMounted, ref, watchEffect } from 'vue'
+import { onMounted, ref } from 'vue'
 
-let map: leaflet.Map
-let useGeoMarker: leaflet.Marker
-// console.log(location)
+// Map and user coordinates references
+const map = ref<L.Map>()
+const lat = ref<number>(0)
+const lon = ref<number>(0)
+const userCoord = ref<Coordinate>({ latitude: 0, longitude: 0 })
 
-let zoom = ref(6)
-let center = ref([38, 139.69])
-
-const { coords } = useGeolocation()
-const userCoordinates = ref<UserCoordinateTypes>({ latitude: 0, longitude: 0 })
-
+// Props to accept coordinates from parent component
 const props = defineProps({
   coordinates: {
-    type: Object as () => UserCoordinateTypes,
+    type: Object as () => Coordinate,
     default: () => ({ latitude: 0, longitude: 0 })
   }
 })
 
-// const map = ref<google.maps.Map | null>(null)
-// const heatmap = ref<google.maps.visualization.HeatmapLayer | null>(null)
+// Initialize map with user location or default view
+const initMap = () => {
+  map.value = L.map('map').setView([26, 86], 10) // Initialize with a global view
 
-// const initMap = async () => {
-//   const loader = new Loader({
-//     apiKey: config.googleMapApiKey,
-//     version: 'weekly',
-//     libraries: ['visualization']
-//   })
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18
+  }).addTo(map.value)
 
-//   await loader.importLibrary('core')
-
-//   // Initialize the map
-//   const mapElement = document.getElementById('map') as HTMLElement
-//   map.value = new google.maps.Map(mapElement, {
-//     center: { lat: props.coordinates.latitude, lng: props.coordinates.longitude },
-//     zoom: 2
-//   })
-
-//   // Initialize the heatmap
-//   const weatherData = await fetchWeatherData() // Fetch weather data
-//   const heatMapData = weatherData.map((item) => {
-//     return new google.maps.LatLng(item.lat, item.lng) // Use actual lat/lng from data
-//   })
-
-//   heatmap.value = new google.maps.visualization.HeatmapLayer({
-//     data: heatMapData,
-//     dissipating: true,
-//     radius: 30 // Adjust this to make the heatmap points larger or smaller
-//   })
-
-//   heatmap.value.setMap(map.value)
-// }
-
-// const fetchWeatherData = async () => {
-//   return [
-//     { lat: 37.774546, lng: -122.433523 },
-//     { lat: 40.712776, lng: -74.005974 },
-//     { lat: 40.712776, lng: -74.005974 },
-//     { lat: 40.712776, lng: -75.005974 },
-//     { lat: 40.712776, lng: -76.005974 },
-//     { lat: 40.712776, lng: -77.005974 },
-//     { lat: 40.712776, lng: -78.005974 },
-//     { lat: 40.712776, lng: -79.005974 },
-//     { lat: 40.712776, lng: -80.005974 }
-//   ]
-// }
-
-// onMounted(() => {
-//   initMap()
-// })
-
-const setCoordinates = (coordinates: UserCoordinateTypes): UserCoordinateTypes => {
-  userCoordinates.value = coordinates
-  return userCoordinates.value
+  // Geolocation to set the map view to user's location
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition((position) => {
+      const lat = position.coords.latitude
+      const lng = position.coords.longitude
+      map.value?.setView([26, 86], 10)
+    })
+  }
 }
 
-onMounted(() => {
-  userCoordinates.value = props.coordinates
-  map = leaflet
-    .map('map')
-    .setView([userCoordinates.value.latitude, userCoordinates.value.longitude], 13)
-  leaflet
-    .tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    })
-    .addTo(map)
-    .openPopup()
-  useGeoMarker = leaflet
-    .marker([userCoordinates.value.latitude, userCoordinates.value.longitude])
-    .addTo(map)
-})
-
-watchEffect(() => {
-  if (
-    coords.value.latitude !== Number.POSITIVE_INFINITY &&
-    coords.value.longitude !== Number.NEGATIVE_INFINITY
-  ) {
-    console.log(coords.value)
-    userCoordinates.value.latitude = coords.value.latitude
-    userCoordinates.value.longitude = coords.value.longitude
-
-    useGeoMarker = leaflet
-      .marker([userCoordinates.value.latitude, userCoordinates.value.longitude])
-      .addTo(map)
+// Function to go to the input latitude and longitude
+const goToLocation = () => {
+  if (lat.value && lon.value) {
+    map.value?.setView([lat.value, lon.value], 10)
   }
+}
+
+// Function to add heatmap layer to the map
+const addHeatmapLayer = (weatherPoints: { lat: number; lon: number; temp: number }[]) => {
+  const maxTemp = Math.max(...weatherPoints.map((d) => d.temp))
+  const minTemp = Math.min(...weatherPoints.map((d) => d.temp))
+  console.log(maxTemp)
+  console.log(minTemp)
+
+  const heatPoints: L.HeatLatLngTuple[] = weatherPoints.map((point) => [
+    point.lat,
+    point.lon,
+    (point.temp - minTemp) / (maxTemp - minTemp)
+  ])
+
+  L.heatLayer(heatPoints, {
+    radius: 50,
+    blur: 40,
+    maxZoom: 8,
+    minOpacity: 0.5,
+    gradient: {
+      0.0: 'blue',
+      0.4: 'lime', // Mild areas
+      0.6: 'yellow', // Warmer areas
+      0.8: 'orange', // Hot areas
+      1.0: 'red' // Hottest areas
+    }
+  }).addTo(map.value!)
+}
+
+// Fetch weather data and update heatmap
+const updateHeatmap = async () => {
+  const weatherPoints: { lat: number; lon: number; temp: number }[] = []
+
+  // Example locations (replace with real data points)
+  // const locations = [
+  //   { lat: 27, lon: 85 }, // Example location
+  //   { lat: 26, lon: 86 },
+  //   { lat: 26, lon: 86.001 },
+  //   { lat: 26, lon: 86.2 } // Add more points here
+  // ]
+
+  // Fetch weather data for each location
+  const locations = weatherDataNepal
+  // let idx = 1
+  for (const loc of locations) {
+    // const data = await fetchWeatherData({ latitude: loc.lat, longitude: loc.lon })
+    weatherPoints.push({
+      lat: loc?.coord.lat ?? 0,
+      lon: loc?.coord.lon ?? 0,
+      temp: loc?.main.temp ?? 0
+    })
+  }
+
+  // for (let i = 0; i < 100; i++) {
+  //   weatherPoints.push({
+  //     lat: 26 + i / 100,
+  //     lon: 80 + i / 100,
+  //     temp: i
+  //   })
+  // }
+
+  // Add heatmap to the map using fetched data
+  addHeatmapLayer(weatherPoints)
+}
+
+// On component mount, initialize the map and update heatmap
+onMounted(() => {
+  initMap()
+  updateHeatmap()
 })
 </script>
 
 <template>
-  <section class="w-screen h-96 border border-green-700">
+  <section class="w-full h-full">
+    <!-- Map container -->
     <div id="map"></div>
+
+    <!-- Controls to enter latitude and longitude -->
+    <div class="flex gap-1 w-full">
+      <input v-model="lat" type="number" placeholder="Enter Latitude" />
+      <input v-model="lon" type="number" placeholder="Enter Longitude" />
+      <button @click="goToLocation" class="bg-green-600">Go</button>
+    </div>
   </section>
 </template>
 
-<style>
+<style scoped>
 #map {
-  width: auto;
+  width: 100%;
   height: 100%;
 }
 </style>
