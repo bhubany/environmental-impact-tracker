@@ -1,6 +1,6 @@
 import type { Weather } from '@/shared/types/weather'
 
-export const weatherDataNepal: Weather[] = [
+export const weatherData: Weather[] = [
   {
     coord: {
       lon: 85.324,

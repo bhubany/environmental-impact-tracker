@@ -13,6 +13,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@types/geojson": "^7946.0.14",
     "@vue-leaflet/vue-leaflet": "^0.10.1",
     "@vueuse/core": "^11.0.3",
     "axios": "^1.7.7",

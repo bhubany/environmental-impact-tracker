@@ -42,7 +42,7 @@ const toggleHamburgerButton = () => {
 </script>
 
 <template>
-  <header class="md:bg-green-600 w-full sticky top-0 z-50 p-4">
+  <header :class="cn('md:bg-green-600 bg-white w-full sticky top-0 z-50 p-4')">
     <div :class="cn('max-w-screen-xl  md:flex mx-auto')">
       <div class="flex justify-between items-center py-3 px-8 w-full">
         <RouterLink to="/" :class="cn('flex justify-center items-center gap-2')">
