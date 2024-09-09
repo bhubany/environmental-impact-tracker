@@ -24,6 +24,16 @@ const initMap = (coord: Coordinate) => {
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 18
   }).addTo(map.value)
+
+  const marker = L.marker([coord.latitude, coord.longitude]).addTo(map.value)
+  marker.bindPopup('<b>Hello world!</b><br>I am a popup.').openPopup()
+  marker.bindTooltip('my tooltip text').openTooltip()
+
+  function onMapClick(e: any) {
+    alert('You clicked the map at ' + e.latlng)
+  }
+
+  map.value!.on('click', onMapClick)
 }
 
 const addHeatmapLayer = (weatherPoints: { lat: number; lon: number; temp: number }[]) => {
@@ -37,7 +47,7 @@ const addHeatmapLayer = (weatherPoints: { lat: number; lon: number; temp: number
   ])
 
   L.heatLayer(heatPoints, {
-    radius: 50,
+    radius: 15,
     blur: 40,
     maxZoom: 8,
     minOpacity: 0.5,
@@ -66,10 +76,29 @@ const updateHeatmap = async (weatherData: Weather[]) => {
   addHeatmapLayer(weatherPoints)
 }
 
+const handleMapZoom = () => {
+  let previousZoomLevel = map.value!.getZoom()
+  map.value!.on('zoom', function (e) {
+    const currentZoomLevel = e.target.getZoom()
+
+    if (currentZoomLevel > previousZoomLevel) {
+      console.log('Zooming in')
+      // Perform zoom-in operation here
+    } else if (currentZoomLevel < previousZoomLevel) {
+      console.log('Zooming out')
+      // Perform zoom-out operation here
+    }
+
+    // Update the previous zoom level for the next event
+    previousZoomLevel = currentZoomLevel
+  })
+}
+
 // On component mount, initialize the map and update heatmap
 onMounted(() => {
   initMap(props.coordinates)
   updateHeatmap(props.weatherData)
+  handleMapZoom()
 })
 </script>
 
