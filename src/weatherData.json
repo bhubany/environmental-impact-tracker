@@ -1,0 +1,3390 @@
+[
+  {
+    "coord": {
+      "lon": 29.17,
+      "lat": 81.291
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 20.6,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 0.2,
+      "deg": 0.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.95,
+      "lat": 83.15
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 21.2,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 0.4,
+      "deg": 1,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 28.2725,
+      "lat": 83.5896
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 21.8,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 0.6000000000000001,
+      "deg": 1.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 29.538,
+      "lat": 80.519
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 22.4,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 0.8,
+      "deg": 2,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 29.694,
+      "lat": 81.25
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 23,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 1,
+      "deg": 2.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 29.4284,
+      "lat": 81.2552
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 23.6,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 1.2000000000000002,
+      "deg": 3,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 28.147,
+      "lat": 81.684
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 24.2,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 1.4000000000000001,
+      "deg": 3.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.07,
+      "lat": 85.04
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 24.8,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 1.6,
+      "deg": 4,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 28.35,
+      "lat": 81.23
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 25.4,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 1.8,
+      "deg": 4.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.671,
+      "lat": 85.4298
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 26,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 2,
+      "deg": 5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.172,
+      "lat": 87.05
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 26.6,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 2.2,
+      "deg": 5.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.5291,
+      "lat": 84.3542
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 27.2,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 2.4000000000000004,
+      "deg": 6,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 29.298,
+      "lat": 80.586
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 27.8,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 2.6,
+      "deg": 6.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 28.883,
+      "lat": 81.71
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 28.4,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 2.8000000000000003,
+      "deg": 7,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 28.1056,
+      "lat": 82.292
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 29,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 3,
+      "deg": 7.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 29.85,
+      "lat": 80.55
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 29.6,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 3.2,
+      "deg": 8,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.8667,
+      "lat": 84.9167
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 30.2,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 3.4000000000000004,
+      "deg": 8.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.023,
+      "lat": 87.3656
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 30.799999999999997,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 3.6,
+      "deg": 9,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 26.8096,
+      "lat": 85.9376
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 31.4,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 3.8000000000000003,
+      "deg": 9.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.716,
+      "lat": 86.1752
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 32,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 4,
+      "deg": 10,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 29.18,
+      "lat": 82.9826
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 32.6,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 4.2,
+      "deg": 10.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 29.2606,
+      "lat": 80.9634
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 33.2,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 4.4,
+      "deg": 11,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 28.705,
+      "lat": 82.4691
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 33.8,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 4.6000000000000005,
+      "deg": 11.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 28.3,
+      "lat": 84.6333
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 34.4,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 4.800000000000001,
+      "deg": 12,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 28.1167,
+      "lat": 83.25
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 35,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 5,
+      "deg": 12.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 30.021,
+      "lat": 81.83
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 35.6,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 5.2,
+      "deg": 13,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 26.911,
+      "lat": 87.925
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 36.2,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 5.4,
+      "deg": 13.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 28.85,
+      "lat": 82.25
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 36.8,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 5.6000000000000005,
+      "deg": 14,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 26.5455,
+      "lat": 88.0774
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 37.4,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 5.800000000000001,
+      "deg": 14.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 29.274,
+      "lat": 82.1836
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 38,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 6,
+      "deg": 15,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 28.5167,
+      "lat": 80.75
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 38.599999999999994,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 6.2,
+      "deg": 15.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 29.138,
+      "lat": 81.608
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 39.2,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 6.4,
+      "deg": 16,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 28.95,
+      "lat": 80.1833
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 39.8,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 6.6000000000000005,
+      "deg": 16.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.5333,
+      "lat": 83.05
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 40.4,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 6.800000000000001,
+      "deg": 17,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 28.2,
+      "lat": 84.0167
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 41,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 7,
+      "deg": 17.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.7172,
+      "lat": 85.324
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 41.599999999999994,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 7.2,
+      "deg": 18,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.6167,
+      "lat": 85.55
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 42.2,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 7.4,
+      "deg": 18.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.1,
+      "lat": 86.7833
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 42.8,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 7.6000000000000005,
+      "deg": 19,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.667,
+      "lat": 85.322
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 43.4,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 7.800000000000001,
+      "deg": 19.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 28.2833,
+      "lat": 84.45
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 44,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 8,
+      "deg": 20,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 26.6667,
+      "lat": 85.8167
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 44.599999999999994,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 8.200000000000001,
+      "deg": 20.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.4,
+      "lat": 85.2
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 45.2,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 8.4,
+      "deg": 21,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 28.675,
+      "lat": 84.07
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 45.8,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 8.6,
+      "deg": 21.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 26.4769,
+      "lat": 87.342
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 46.4,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 8.8,
+      "deg": 22,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 29.6295,
+      "lat": 82.621
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 47,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 9,
+      "deg": 22.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 28.9985,
+      "lat": 83.7709
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 47.599999999999994,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 9.200000000000001,
+      "deg": 23,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 28.3315,
+      "lat": 83.5696
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 48.2,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 9.4,
+      "deg": 23.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.692,
+      "lat": 84.2416
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 48.8,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 9.600000000000001,
+      "deg": 24,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.9263,
+      "lat": 85.2876
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 49.4,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 9.8,
+      "deg": 24.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.329,
+      "lat": 86.5012
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 50,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 10,
+      "deg": 25,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.9,
+      "lat": 83.55
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 50.599999999999994,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 10.200000000000001,
+      "deg": 25.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.1167,
+      "lat": 87.7667
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 51.2,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 10.4,
+      "deg": 26,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.55,
+      "lat": 83.6167
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 51.8,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 10.600000000000001,
+      "deg": 26.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 28.23,
+      "lat": 83.71
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 52.4,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 10.8,
+      "deg": 27,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27,
+      "lat": 84.8833
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 53,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 11,
+      "deg": 27.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 28.0833,
+      "lat": 82.8833
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 53.6,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 11.200000000000001,
+      "deg": 28,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.339,
+      "lat": 86.1174
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 54.199999999999996,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 11.4,
+      "deg": 28.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 28.1667,
+      "lat": 85.3333
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 54.8,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 11.600000000000001,
+      "deg": 29,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 26.7716,
+      "lat": 85.271
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 55.4,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 11.8,
+      "deg": 29.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 28.2769,
+      "lat": 82.6634
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 56,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 12,
+      "deg": 30,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.5075,
+      "lat": 83.485
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 56.6,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 12.200000000000001,
+      "deg": 30.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 28.3496,
+      "lat": 82.16
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 57.199999999999996,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 12.4,
+      "deg": 31,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.646,
+      "lat": 87.3022
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 57.8,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 12.600000000000001,
+      "deg": 31.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 26.6225,
+      "lat": 86.9456
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 58.4,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 12.8,
+      "deg": 32,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 26.96,
+      "lat": 85.5667
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 59,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 13,
+      "deg": 32.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.25,
+      "lat": 85.9667
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 59.6,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 13.200000000000001,
+      "deg": 33,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.8667,
+      "lat": 85.7
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 60.199999999999996,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 13.4,
+      "deg": 33.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 26.6595,
+      "lat": 86.2076
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 60.8,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 13.600000000000001,
+      "deg": 34,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.691,
+      "lat": 86.73
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 61.4,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 13.8,
+      "deg": 34.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 26.6616,
+      "lat": 87.1293
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 62,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 14,
+      "deg": 35,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 28.6,
+      "lat": 81.6
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 62.6,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 14.200000000000001,
+      "deg": 35.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 28.16,
+      "lat": 83.78
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 63.199999999999996,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 14.4,
+      "deg": 36,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 28,
+      "lat": 84.25
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 63.8,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 14.600000000000001,
+      "deg": 36.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.37,
+      "lat": 87.664
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 64.4,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 14.8,
+      "deg": 37,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 27.2,
+      "lat": 87.583
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 65,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 15,
+      "deg": 37.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 26.809,
+      "lat": 86.6882
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 65.6,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 15.200000000000001,
+      "deg": 38,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  },
+  {
+    "coord": {
+      "lon": 28.631,
+      "lat": 82.4636
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 66.19999999999999,
+      "feels_like": 302.8,
+      "temp_min": 299,
+      "temp_max": 300.5,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 1006
+    },
+    "visibility": 11000,
+    "wind": {
+      "speed": 15.4,
+      "deg": 38.5,
+      "gust": 3.5
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1725546183,
+    "sys": {
+      "country": "NP",
+      "sunrise": 1725494479,
+      "sunset": 1725539787
+    },
+    "timezone": 20700,
+    "id": 1283686,
+    "name": "Dhankuta",
+    "cod": 200
+  }
+]

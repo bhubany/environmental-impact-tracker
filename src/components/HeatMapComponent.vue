@@ -1,11 +1,16 @@
 <script lang="ts" setup>
+import districtCoord from '@/districtCoord.json'
 import { type Coordinate } from '@/shared/types/geo'
 import type { Weather } from '@/shared/types/weather'
+import { debounce } from '@/utils'
+import { findOrCalculateWeatherData } from '@/utils/geoUtil'
 import L from 'leaflet'
 import 'leaflet.heat'
 import { onMounted, ref } from 'vue'
 
 const map = ref<L.Map>()
+const radius = ref<number>(70)
+const zoomLevel = ref<number>(7)
 
 const props = defineProps({
   coordinates: {
@@ -13,27 +18,53 @@ const props = defineProps({
     default: () => ({ latitude: 0, longitude: 0 })
   },
   weatherData: {
-    type: Object as () => Weather[],
-    default: () => ({})
+    type: Array as () => Weather[],
+    default: () => [],
+    required: true
   }
 })
 
-const initMap = (coord: Coordinate) => {
-  map.value = L.map('map').setView([coord.latitude, coord.longitude], 10)
+const initMap = () => {
+  const { latitude, longitude } = props.coordinates
+  map.value = L.map('map').setView([latitude, longitude], 10)
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 18
   }).addTo(map.value)
 
-  const marker = L.marker([coord.latitude, coord.longitude]).addTo(map.value)
-  marker.bindPopup('<b>Hello world!</b><br>I am a popup.').openPopup()
-  marker.bindTooltip('my tooltip text').openTooltip()
+  L.marker([latitude, longitude]).addTo(map.value)
 
-  function onMapClick(e: any) {
-    alert('You clicked the map at ' + e.latlng)
+  // Initialize zoomLevel
+  zoomLevel.value = map.value.getZoom()
+
+  // Initialize heatmap layer
+  updateHeatmap(props.weatherData)
+}
+
+const handleClick = () => {
+  if (map.value) {
+    map.value.on('click', (e: L.LeafletMouseEvent) => {
+      const { latlng } = e
+
+      const newWeatherData = findOrCalculateWeatherData({
+        latitude: latlng.lat,
+        longitude: latlng.lng
+      })
+
+      const popupContent = newWeatherData
+        ? `
+          <div>
+            <h3>Weather Details</h3>
+            <p><strong>Temperature:</strong> ${newWeatherData.main.temp.toFixed(2)}°C</p>
+            <p><strong>Air Quality:</strong> ${newWeatherData.clouds.all ?? 'N/A'}</p>
+            <!-- Add more details as needed -->
+          </div>
+        `
+        : '<div><h3>No data available for this location</h3></div>'
+
+      L.popup().setLatLng(latlng).setContent(popupContent).openOn(map.value!)
+    })
   }
-
-  map.value!.on('click', onMapClick)
 }
 
 const addHeatmapLayer = (weatherPoints: { lat: number; lon: number; temp: number }[]) => {
@@ -46,19 +77,29 @@ const addHeatmapLayer = (weatherPoints: { lat: number; lon: number; temp: number
     (point.temp - minTemp) / (maxTemp - minTemp)
   ])
 
-  L.heatLayer(heatPoints, {
-    radius: 15,
-    blur: 40,
-    maxZoom: 8,
-    minOpacity: 0.5,
-    gradient: {
-      0.0: 'blue',
-      0.4: 'lime', // Mild areas
-      0.6: 'yellow', // Warmer areas
-      0.8: 'orange', // Hot areas
-      1.0: 'red' // Hottest areas
+  // Remove existing heatmap layer if present
+  map.value?.eachLayer((layer) => {
+    if (layer instanceof L.heatLayer) {
+      map.value?.removeLayer(layer)
     }
-  }).addTo(map.value!)
+  })
+
+  if (map.value) {
+    console.log(`radius.value => ${radius.value}`)
+    L.heatLayer(heatPoints, {
+      radius: radius.value == 0 ? 1 : radius.value,
+      blur: 20,
+      maxZoom: 10,
+      minOpacity: 0.5,
+      gradient: {
+        0.0: 'blue',
+        0.4: 'lime', // Mild areas
+        0.6: 'yellow', // Warmer areas
+        0.8: 'orange', // Hot areas
+        1.0: 'red' // Hottest areas
+      }
+    }).addTo(map.value)
+  }
 }
 
 // Fetch weather data and update heatmap
@@ -67,8 +108,8 @@ const updateHeatmap = async (weatherData: Weather[]) => {
 
   for (const loc of weatherData) {
     weatherPoints.push({
-      lat: loc?.coord.lat ?? 0,
-      lon: loc?.coord.lon ?? 0,
+      lat: loc?.coord.lon ?? 0,
+      lon: loc?.coord.lat ?? 0,
       temp: loc?.main.temp ?? 0
     })
   }
@@ -77,28 +118,40 @@ const updateHeatmap = async (weatherData: Weather[]) => {
 }
 
 const handleMapZoom = () => {
-  let previousZoomLevel = map.value!.getZoom()
-  map.value!.on('zoom', function (e) {
-    const currentZoomLevel = e.target.getZoom()
+  if (map.value) {
+    // Remove existing zoom handlers
+    map.value.off('zoom')
 
-    if (currentZoomLevel > previousZoomLevel) {
-      console.log('Zooming in')
-      // Perform zoom-in operation here
-    } else if (currentZoomLevel < previousZoomLevel) {
-      console.log('Zooming out')
-      // Perform zoom-out operation here
-    }
+    map.value.on(
+      'zoom',
+      debounce((e: L.LeafletEvent) => {
+        if (!map.value) return
 
-    // Update the previous zoom level for the next event
-    previousZoomLevel = currentZoomLevel
+        const currentZoomLevel = e.target.getZoom()
+        radius.value = 25 * (currentZoomLevel / 7)
+
+        // Update heatmap with new radius
+        updateHeatmap(props.weatherData)
+
+        console.log(`New Radius => ${radius.value}`)
+        zoomLevel.value = currentZoomLevel
+      }, 100)
+    )
+  }
+}
+
+const addMarker = () => {
+  districtCoord.map((el) => {
+    L.marker([el.latitude, el.longitude]).addTo(map.value!)
   })
 }
 
 // On component mount, initialize the map and update heatmap
 onMounted(() => {
-  initMap(props.coordinates)
-  updateHeatmap(props.weatherData)
+  initMap()
   handleMapZoom()
+  handleClick()
+  addMarker()
 })
 </script>
 

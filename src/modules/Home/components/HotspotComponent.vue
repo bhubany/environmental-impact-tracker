@@ -4,15 +4,18 @@ import GMapComponent from '@/components/GMapComponent.vue'
 import HeatMapComponent from '@/components/HeatMapComponent.vue'
 import InfoComponent from '@/components/InfoComponent.vue'
 import { getUserCoordinates } from '@/shared/apis/geoApi'
-import { weatherData } from '@/shared/constants/weatherData'
 import type { Coordinate } from '@/shared/types/geo'
+import type { Weather } from '@/shared/types/weather'
+import { getWeatherData } from '@/utils/geoUtil'
 import { onMounted, ref } from 'vue'
 
 const userCoordinates = ref<Coordinate>({ latitude: 0, longitude: 0 })
 const isCoordinatesLoaded = ref(false)
+const weather = ref<Weather[]>()
 
 onMounted(async () => {
   userCoordinates.value = await getUserCoordinates()
+  weather.value = getWeatherData()
   isCoordinatesLoaded.value = true
 })
 </script>
@@ -29,9 +32,9 @@ onMounted(async () => {
     <div class="flex flex-col py-10 px-8 gap-2">
       <GMapComponent v-if="isCoordinatesLoaded" :userCoordinates="userCoordinates">
         <HeatMapComponent
-          v-if="isCoordinatesLoaded"
+          v-if="isCoordinatesLoaded && weather?.length"
           :coordinates="userCoordinates"
-          :weatherData="weatherData"
+          :weatherData="weather"
         />
       </GMapComponent>
     </div>

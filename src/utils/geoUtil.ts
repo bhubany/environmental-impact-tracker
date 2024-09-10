@@ -1,76 +1,101 @@
-// Function to convert degrees to radians
-function toRadians(deg: number): number {
-  return deg * (Math.PI / 180)
+import type { Coordinate } from '@/shared/types/geo'
+import type { Weather } from '@/shared/types/weather'
+import weatherData from '@/weatherData.json'
+
+export const getWeatherData = (): Weather[] => {
+  return weatherData as Weather[]
 }
 
-// Haversine distance function
-function haversineDistance(
-  coord1: { lat: number; lon: number },
-  coord2: { lat: number; lon: number }
-): number {
-  const R = 6371 // Earth's radius in kilometers
-  const lat1 = toRadians(coord1.lat)
-  const lat2 = toRadians(coord2.lat)
-  const dLat = toRadians(coord2.lat - coord1.lat)
-  const dLon = toRadians(coord2.lon - coord1.lon)
+export const findOrCalculateWeatherData = (coordinate: Coordinate): Weather => {
+  const { latitude, longitude } = coordinate
+  const exactMatch = weatherData.find(
+    (data) =>
+      Math.abs(data.coord.lat - latitude) < 0.0001 && Math.abs(data.coord.lon - longitude) < 0.0001
+  )
 
-  const a =
-    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-    Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLon / 2) * Math.sin(dLon / 2)
-  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
-
-  return R * c // Distance in kilometers
+  if (exactMatch) {
+    return exactMatch as Weather
+  }
+  return interpolateWeatherData(latitude, longitude)
 }
 
-// Function to find all coordinates within a radius
-function findCoordinatesWithinRadius(
-  centerCoord: { lat: number; lon: number },
-  allCoords: { lat: number; lon: number }[],
-  radius: number
-): { lat: number; lon: number }[] {
-  return allCoords.filter((coord) => {
-    const distance = haversineDistance(centerCoord, coord)
-    return distance <= radius
+const interpolateWeatherData = (latitude: number, longitude: number): Weather => {
+  const distances = weatherData.map((data) => {
+    const dx = data.coord.lat - latitude
+    const dy = data.coord.lon - longitude
+    return Math.sqrt(dx * dx + dy * dy)
   })
+
+  // Find the two closest points
+  const sortedIndices = distances
+    .map((distance, index) => ({ distance, index }))
+    .sort((a, b) => a.distance - b.distance)
+    .map((item) => item.index)
+
+  if (sortedIndices.length < 2) {
+    return {} as Weather
+  }
+
+  const [index1, index2] = sortedIndices.slice(0, 2)
+  const point1 = weatherData[index1]
+  const point2 = weatherData[index2]
+
+  // Calculate weights for interpolation
+  const d1 = distances[index1]
+  const d2 = distances[index2]
+  const totalDistance = d1 + d2
+
+  const weight1 = d2 / totalDistance
+  const weight2 = d1 / totalDistance
+
+  const interpolatedTemp = weight1 * point1.main.temp + weight2 * point2.main.temp
+
+  // // Optionally interpolate other fields (e.g., air_quality)
+  // const interpolatedAirQuality =
+  //   (point1.air_quality ?? 0) * weight1 + (point2.air_quality ?? 0) * weight2
+
+  return {
+    coord: {
+      lon: longitude,
+      lat: latitude
+    },
+    weather: [
+      {
+        id: 801,
+        main: 'Clouds',
+        description: 'few clouds',
+        icon: '02d'
+      }
+    ],
+    base: 'stations',
+    main: {
+      temp: interpolatedTemp,
+      feels_like: 302.8,
+      temp_min: 299,
+      temp_max: 300.5,
+      pressure: 1010,
+      humidity: 84,
+      sea_level: 1010,
+      grnd_level: 1006
+    },
+    visibility: 11000,
+    wind: {
+      speed: 0.6000000000000001,
+      deg: 1.5,
+      gust: 3.5
+    },
+    clouds: {
+      all: 20
+    },
+    dt: 1725546183,
+    sys: {
+      country: 'NP',
+      sunrise: 1725494479,
+      sunset: 1725539787
+    },
+    timezone: 20700,
+    id: 1283686,
+    name: 'Dhankuta',
+    cod: 200
+  }
 }
-
-// Example coordinates data
-const allCoords = [
-  { lat: 27.7172, lon: 85.324 }, // Kathmandu
-  { lat: 28.3949, lon: 84.124 }, // Pokhara
-  { lat: 26.3966, lon: 87.2832 } // Biratnagar
-  // Add more coordinates here
-]
-
-const centerCoord = { lat: 27.7172, lon: 85.324 } // Kathmandu's coordinates
-
-const radius = 200 // 200 km radius
-
-// Find all coordinates within 200 km radius
-const nearbyCoords = findCoordinatesWithinRadius(centerCoord, allCoords, radius)
-
-console.log(nearbyCoords)
-
-function getBoundingBox(centerCoord: { lat: number; lon: number }, radius: number) {
-  const R = 6371 // Earth's radius in km
-  const lat = centerCoord.lat
-  const lon = centerCoord.lon
-
-  const maxLat = lat + (radius / R) * (180 / Math.PI)
-  const minLat = lat - (radius / R) * (180 / Math.PI)
-
-  const maxLon = lon + ((radius / R) * (180 / Math.PI)) / Math.cos((lat * Math.PI) / 180)
-  const minLon = lon - ((radius / R) * (180 / Math.PI)) / Math.cos((lat * Math.PI) / 180)
-
-  return { maxLat, minLat, maxLon, minLon }
-}
-
-const boundingBox = getBoundingBox(centerCoord, radius)
-
-const filteredCoords = allCoords.filter(
-  (coord) =>
-    coord.lat >= boundingBox.minLat &&
-    coord.lat <= boundingBox.maxLat &&
-    coord.lon >= boundingBox.minLon &&
-    coord.lon <= boundingBox.maxLon
-)
