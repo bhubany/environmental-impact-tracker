@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import districtCoord from '@/districtCoord.json'
 import { type Coordinate } from '@/shared/types/geo'
 import type { Weather } from '@/shared/types/weather'
 import { debounce } from '@/utils'
@@ -128,7 +127,7 @@ const handleMapZoom = () => {
         if (!map.value) return
 
         const currentZoomLevel = e.target.getZoom()
-        radius.value = 25 * (currentZoomLevel / 7)
+        radius.value = 15 * (currentZoomLevel / 7)
 
         // Update heatmap with new radius
         updateHeatmap(props.weatherData)
@@ -140,23 +139,17 @@ const handleMapZoom = () => {
   }
 }
 
-const addMarker = () => {
-  districtCoord.map((el) => {
-    L.marker([el.latitude, el.longitude]).addTo(map.value!)
-  })
-}
-
 // On component mount, initialize the map and update heatmap
 onMounted(() => {
   initMap()
   handleMapZoom()
   handleClick()
-  addMarker()
 })
 </script>
 
 <template>
   <section class="w-full h-full">
+    <div class="w-full h-auto"></div>
     <div id="map"></div>
   </section>
 </template>

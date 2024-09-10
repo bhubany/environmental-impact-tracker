@@ -29,8 +29,8 @@ onMounted(async () => {
         precise location. Otherwise, the app will estimate your location based on your IP address.
       </InfoComponent>
     </div>
-    <div class="flex flex-col py-10 px-8 gap-2">
-      <GMapComponent v-if="isCoordinatesLoaded" :userCoordinates="userCoordinates">
+    <div class="flex flex-col py-10 px-8 gap-2 overflow-clip h-[500px] md:h-[700px]">
+      <GMapComponent v-if="isCoordinatesLoaded" :userCoordinates="userCoordinates" class="z-0">
         <HeatMapComponent
           v-if="isCoordinatesLoaded && weather?.length"
           :coordinates="userCoordinates"
