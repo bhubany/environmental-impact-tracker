@@ -25,9 +25,13 @@ const features: FeatureCardType[] = [
 
 <template>
   <section class="w-full bg-green-100">
-    <div class="max-w-screen-xl mx-auto">
-      <h2 class="text-center text-xl font-bold my-3">Features</h2>
-      <div class="flex flex-wrap justify-center items-stretch gap-4 py-4">
+    <div class="max-w-screen-xl mx-auto p-4">
+      <h2 class="text-xl font-bold my-3 text-green-700">Key Features for a Sustainable Future</h2>
+      <p class="text-gray-800">
+        Discover tools to measure your environmental impact, support green initiatives, and track
+        your progress toward a more sustainable lifestyle.
+      </p>
+      <div class="flex flex-wrap justify-center items-stretch gap-6 py-4">
         <FeatureCard v-for="feature in features" :key="feature.id" :data="feature"></FeatureCard>
       </div>
     </div>
