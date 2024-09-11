@@ -129,6 +129,9 @@ export default {
           800: '#00796B',
           900: '#004D40'
         }
+      },
+      backgroundImage: {
+        'not-found': "url('@/assets/images/404-not-found.png')"
       }
     }
   },
