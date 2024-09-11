@@ -1,5 +1,6 @@
 import DefaultLayout from '@/layouts/Default/DefaultLayout.vue'
 import homeRoute from '@/modules/Home/router'
+import newsRoute from '@/modules/News/router'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const isAuthenticated = () => {
@@ -14,7 +15,7 @@ const router = createRouter({
       name: 'public',
       component: DefaultLayout,
       redirect: '/',
-      children: [...homeRoute]
+      children: [...homeRoute, ...newsRoute]
     },
     {
       path: '/:catchAll(.*)',
