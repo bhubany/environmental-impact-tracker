@@ -3,7 +3,7 @@ import ContentWrapper from '@/components/ContentWrapper.vue'
 import EventCard from './EventCard.vue'
 
 export type EventType = {
-  id: Number
+  id: number
   icon: string
   title: string
   date: string
