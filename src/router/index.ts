@@ -1,4 +1,5 @@
 import DefaultLayout from '@/layouts/Default/DefaultLayout.vue'
+import aboutRoute from '@/modules/About/router'
 import homeRoute from '@/modules/Home/router'
 import newsRoute from '@/modules/News/router'
 import { createRouter, createWebHistory } from 'vue-router'
@@ -15,7 +16,7 @@ const router = createRouter({
       name: 'public',
       component: DefaultLayout,
       redirect: '/',
-      children: [...homeRoute, ...newsRoute]
+      children: [...homeRoute, ...newsRoute, ...aboutRoute]
     },
     {
       path: '/:catchAll(.*)',

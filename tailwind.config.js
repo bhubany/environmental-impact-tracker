@@ -22,6 +22,9 @@ export default {
         'heading-1': ['2.25rem', { lineHeight: '2.5rem' }],
         'heading-2': ['1.875rem', { lineHeight: '2.25rem' }],
         'heading-3': ['1.5rem', { lineHeight: '2rem' }],
+        'heading-4': ['1.125rem', { lineHeight: '1.5rem' }],
+        'heading-5': ['0.875rem', { lineHeight: '1.25rem' }],
+        'heading-6': ['0.75rem', { lineHeight: '1rem' }],
         paragraph: ['1rem', { lineHeight: '1.5rem' }]
       },
       fontWeight: {
@@ -148,6 +151,9 @@ export default {
       },
       backgroundImage: {
         'not-found': "url('@/assets/images/404-not-found.png')"
+      },
+      animation: {
+        transition: 'transform 0.2s ease'
       }
     }
   },
