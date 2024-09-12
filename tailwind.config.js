@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
+import typography from '@tailwindcss/typography'
+
 function withOpacity(color) {
   return ({ opacityValue }) => {
     if (opacityValue !== undefined) {
@@ -15,6 +17,20 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Poppins', 'sans-serif']
+      },
+      fontSize: {
+        'heading-1': ['2.25rem', { lineHeight: '2.5rem' }],
+        'heading-2': ['1.875rem', { lineHeight: '2.25rem' }],
+        'heading-3': ['1.5rem', { lineHeight: '2rem' }],
+        paragraph: ['1rem', { lineHeight: '1.5rem' }]
+      },
+      fontWeight: {
+        heading: '700', // Bold for headings
+        paragraph: '400' // Normal for paragraphs
+      },
+      letterSpacing: {
+        heading: '0.02em',
+        paragraph: 'normal'
       },
       textColor: {
         skin: {
@@ -138,5 +154,5 @@ export default {
   variants: {
     extend: {}
   },
-  plugins: []
+  plugins: [typography]
 }
