@@ -7,9 +7,13 @@ const year = new Date().getFullYear()
     <di class="mx-w-screen-xl mx-auto flex flex-wrap gap-4 justify-center items-center">
       <p>
         &copy; {{ year }}
+        Environmental Impact Tracker. All Rights Reserved
+      </p>
+      <p>
+        Developed By:
         <a href="https://www.bhubaneshwar.com.np/" target="_blank" class="text-blue-300 text-lg"
           >Bhuban Yadav</a
-        >. All Rights Reserved
+        >
       </p>
       <a href="https://github.com/bhubany/environmental-impact-tracker" target="_blank" class="">
         <i class="pi pi-github"> Source Code</i>
