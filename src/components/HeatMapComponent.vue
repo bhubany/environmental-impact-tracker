@@ -12,7 +12,7 @@ const radius = ref<number>(70)
 const zoomLevel = ref<number>(7)
 
 const props = defineProps({
-  coordinates: {
+  coordinate: {
     type: Object as () => Coordinate,
     default: () => ({ latitude: 0, longitude: 0 })
   },
@@ -24,7 +24,7 @@ const props = defineProps({
 })
 
 const initMap = () => {
-  const { latitude, longitude } = props.coordinates
+  const { latitude, longitude } = props.coordinate
   map.value = L.map('map').setView([latitude, longitude], 10)
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -148,7 +148,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="w-full h-full">
+  <section class="w-full h-full -z-0">
     <div class="w-full h-auto"></div>
     <div id="map"></div>
   </section>
