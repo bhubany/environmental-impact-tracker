@@ -1,7 +1,9 @@
 import DefaultLayout from '@/layouts/Default/DefaultLayout.vue'
 import aboutRoute from '@/modules/About/router'
 import homeRoute from '@/modules/Home/router'
+import mapRoute from '@/modules/Map/router'
 import newsRoute from '@/modules/News/router'
+
 import { createRouter, createWebHistory } from 'vue-router'
 
 const isAuthenticated = () => {
@@ -18,6 +20,7 @@ const router = createRouter({
       redirect: '/',
       children: [...homeRoute, ...newsRoute, ...aboutRoute]
     },
+    { ...mapRoute[0] },
     {
       path: '/:catchAll(.*)',
       name: 'not-found',

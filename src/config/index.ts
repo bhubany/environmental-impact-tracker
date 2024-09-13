@@ -5,5 +5,7 @@ export const config = {
   openWeatherApiKey: import.meta.env.VITE_OPEN_WEATHER_API_KEY,
   openWeatherIconUrl: import.meta.env.VITE_OPEN_WEATHER_ICON_URL,
   newsApiUrl: import.meta.env.VITE_NEWS_API_URL,
-  newsApiKey: import.meta.env.VITE_NEWS_API_KEY
+  newsApiKey: import.meta.env.VITE_NEWS_API_KEY,
+  carbonInterfaceApiUrl: import.meta.env.VITE_CARBON_INTERFACE_API_URL,
+  carbonInterfaceApiKey: import.meta.env.VITE_CARBON_INTERFACE_API_KEY
 }
