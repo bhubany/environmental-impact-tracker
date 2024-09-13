@@ -77,6 +77,7 @@ const toggleHamburgerButton = () => {
         "
       >
         <RouterLink
+          @click="toggleHamburgerButton"
           v-for="(menu, idx) in menus"
           :key="idx"
           :to="menu.path"
