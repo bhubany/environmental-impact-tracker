@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import ContentWrapper from '@/components/ContentWrapper.vue'
-import GMapComponent from '@/components/GMapComponent.vue'
 import HeatMapComponent from '@/components/HeatMapComponent.vue'
 import InfoComponent from '@/components/InfoComponent.vue'
 import { getUserCoordinates } from '@/shared/apis/geoApi'
@@ -30,13 +29,11 @@ onMounted(async () => {
       </InfoComponent>
     </div>
     <div class="flex flex-col py-10 px-8 gap-2 overflow-clip h-[500px] md:h-[700px]">
-      <GMapComponent v-if="isCoordinatesLoaded" :userCoordinates="userCoordinates" class="z-0">
-        <HeatMapComponent
-          v-if="isCoordinatesLoaded && weather?.length"
-          :coordinates="userCoordinates"
-          :weatherData="weather"
-        />
-      </GMapComponent>
+      <HeatMapComponent
+        v-if="isCoordinatesLoaded && weather?.length"
+        :coordinates="userCoordinates"
+        :weatherData="weather"
+      />
     </div>
   </ContentWrapper>
 </template>
