@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import logo from '@/assets/logo.svg'
 import PrimaryButton from '@/components/buttons/PrimaryButton.vue'
+import ThemeSwitcher from '@/components/ThemeSwitcher.vue'
 import { useAuth } from '@/composable/useAuth'
 import LoginButton from '@/layouts/Default/components/LoginButton.vue'
 import { menus } from '@/shared/constants/menu'
@@ -30,17 +31,20 @@ onMounted(() => {
 </script>
 
 <template>
-  <header :class="cn('md:bg-green-600 bg-white w-full sticky top-0 z-50 p-4')">
+  <header :class="cn('md:bg-green-600 bg-skin-fill w-full sticky top-0 z-50 p-4')">
     <div :class="cn('max-w-screen-xl  md:flex mx-auto')">
       <div class="flex justify-between items-center py-3 px-8 w-full">
         <RouterLink to="/" :class="cn('flex justify-center items-center gap-2')">
           <img :src="logo" alt="Environmental Impact Tracker Logo" width="24" height="auto" />
           <h1
-            :class="cn('md:text-xl lg:text-2xl font-bold text-lg text-green-600 md:text-gray-100')"
+            :class="
+              cn('md:text-xl lg:text-2xl font-bold text-lg text-skin-primary md:text-gray-100')
+            "
           >
             Environmental Impact Tracker
           </h1>
         </RouterLink>
+        <ThemeSwitcher class="md:hidden" />
         <i
           v-if="showhamburgerButton"
           class="pi pi-bars font-black md:!hidden cursor-pointer"
@@ -91,6 +95,7 @@ onMounted(() => {
       <div class="hidden md:flex items-center justify-end">
         <PrimaryButton v-if="isAuthenticated" to="/profile" title="Profile" />
         <LoginButton v-else />
+        <ThemeSwitcher class="hidden md:block" />
       </div>
     </div>
   </header>

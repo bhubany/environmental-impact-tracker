@@ -37,30 +37,31 @@ export default {
       },
       textColor: {
         skin: {
+          primary: 'var(--primary-color)',
           base: 'var(--color-text-base)',
           muted: 'var(--color-text-base)',
           inverted: 'var(--color-text-base)'
-        },
-        backgroundColor: {
-          skin: {
-            fill: 'var(--color-fill)',
-            'button-accent': 'var(--color-button-accent)',
-            'button-secondary': 'var(--color-button-secondary)',
-            'button-tertiary': 'var(--color-button-tertiary)',
-            'button-ghost': 'var(--color-button-ghost)',
-            'button-disabled': 'var(--color-button-disabled)',
-            'button-active': 'var(--color-button-active)',
-            'button-hover': 'var(--color-button-hover)',
-            'button-focus': 'var(--color-button-focus)',
-            'button-pressed': 'var(--color-button-pressed)',
-            'button-checked': 'var(--color-button-checked)',
-            'button-checked-active': 'var(--color-button-checked-active)',
-            'button-checked-hover': 'var(--color-button-checked-hover)',
-            'button-checked-focus': 'var(--color-button-checked-focus)',
-            'button-checked-pressed': 'var(--color-button-checked-pressed)',
-            'button-checked-disabled': 'var(--color-button-checked-disabled)',
-            'button-muted': withOpacity('--color-button-muted')
-          }
+        }
+      },
+      backgroundColor: {
+        skin: {
+          fill: 'var(--color-fill)',
+          'button-accent': 'var(--color-button-accent)',
+          'button-secondary': 'var(--color-button-secondary)',
+          'button-tertiary': 'var(--color-button-tertiary)',
+          'button-ghost': 'var(--color-button-ghost)',
+          'button-disabled': 'var(--color-button-disabled)',
+          'button-active': 'var(--color-button-active)',
+          'button-hover': 'var(--color-button-hover)',
+          'button-focus': 'var(--color-button-focus)',
+          'button-pressed': 'var(--color-button-pressed)',
+          'button-checked': 'var(--color-button-checked)',
+          'button-checked-active': 'var(--color-button-checked-active)',
+          'button-checked-hover': 'var(--color-button-checked-hover)',
+          'button-checked-focus': 'var(--color-button-checked-focus)',
+          'button-checked-pressed': 'var(--color-button-checked-pressed)',
+          'button-checked-disabled': 'var(--color-button-checked-disabled)',
+          'button-muted': withOpacity('--color-button-muted')
         }
       },
       gradientColorStops: {
