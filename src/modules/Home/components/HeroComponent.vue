@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import PrimaryButton from '@/components/buttons/primaryButton.vue'
+import PrimaryButton from '@/components/buttons/PrimaryButton.vue'
 import ContentWrapper from '@/components/ContentWrapper.vue'
 </script>
 

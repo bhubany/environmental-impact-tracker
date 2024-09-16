@@ -5,12 +5,10 @@ import homeRoute from '@/modules/Home/router'
 import loginRoute from '@/modules/Login/router'
 import mapRoute from '@/modules/Map/router'
 import newsRoute from '@/modules/News/router'
+import profileRoute from '@/modules/Profile/router'
+import { isUserAuthenticated } from '@/utils/authenticationUtils'
 
 import { createRouter, createWebHistory } from 'vue-router'
-
-const isAuthenticated = () => {
-  return localStorage.getItem('token') !== null
-}
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,9 +18,16 @@ const router = createRouter({
       name: 'public',
       component: DefaultLayout,
       redirect: '/',
-      children: [...homeRoute, ...newsRoute, ...aboutRoute, ...loginRoute, ...contactRoute]
+      children: [
+        ...homeRoute,
+        ...newsRoute,
+        ...aboutRoute,
+        ...loginRoute,
+        ...contactRoute,
+        ...mapRoute,
+        ...profileRoute
+      ]
     },
-    { ...mapRoute[0] },
     {
       path: '/:catchAll(.*)',
       name: 'not-found',
@@ -32,11 +37,7 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  if (to.meta.requiresAuth && !isAuthenticated()) {
-    next({ name: 'login' })
-  } else {
-    next()
-  }
+  to.meta.requiresAuth && !isUserAuthenticated() ? next({ name: 'login' }) : next()
 })
 
 export default router

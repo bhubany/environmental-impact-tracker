@@ -1,6 +1,4 @@
-import { ref } from 'vue'
-
-const isAuthenticated = ref<boolean>(false)
+import { isUserAuthenticated } from '@/utils/authenticationUtils'
 
 export type AuthType = {
   isAuthenticated: boolean
@@ -8,6 +6,6 @@ export type AuthType = {
 
 export function useAuth(): AuthType {
   return {
-    isAuthenticated: isAuthenticated.value
+    isAuthenticated: isUserAuthenticated()
   }
 }

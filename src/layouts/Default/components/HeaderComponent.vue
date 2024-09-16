@@ -2,43 +2,30 @@
 import logo from '@/assets/logo.svg'
 import { useAuth } from '@/composable/useAuth'
 import LoginButton from '@/layouts/Default/components/LoginButton.vue'
+import { menus } from '@/shared/constants/menu'
+import type { UserDetail } from '@/store/userStore'
 import { cn } from '@/utils'
-import { ref } from 'vue'
+import { getUserDetails } from '@/utils/authenticationUtils'
+import { onMounted, ref } from 'vue'
 import { RouterLink } from 'vue-router'
 
-type MenuType = {
+export type MenuType = {
   title: string
   path: string
 }
 
-const menus: MenuType[] = [
-  {
-    path: '/',
-    title: 'Home'
-  },
-  {
-    path: '/about',
-    title: 'About'
-  },
-  {
-    path: '/news',
-    title: 'News'
-  },
-  {
-    path: '/map',
-    title: 'Map'
-  },
-  {
-    path: '/contact',
-    title: 'Contact'
-  }
-]
-const { isAuthenticated } = useAuth()
+const isAuthenticated = ref<boolean>(false)
+const userDetail = ref<UserDetail>()
 const showhamburgerButton = ref<boolean>(true)
 
 const toggleHamburgerButton = () => {
   showhamburgerButton.value = !showhamburgerButton.value
 }
+
+onMounted(() => {
+  isAuthenticated.value = useAuth().isAuthenticated
+  userDetail.value = getUserDetails() as UserDetail
+})
 </script>
 
 <template>
@@ -87,9 +74,21 @@ const toggleHamburgerButton = () => {
         >
           {{ menu.title }}
         </RouterLink>
-        <LoginButton v-if="!isAuthenticated" class="mt-2 md:hidden" />
+        <RouterLink
+          v-if="!isAuthenticated"
+          @click="toggleHamburgerButton"
+          to="/login"
+          :class="
+            cn(
+              'hover:underline border-b-[1px] border-gray-100 text-center',
+              'md:border-none md:hidden'
+            )
+          "
+        >
+          Login
+        </RouterLink>
       </nav>
-      <div class="hidden md:flex items-center justify-end">
+      <div v-if="!isAuthenticated" class="hidden md:flex items-center justify-end">
         <LoginButton />
       </div>
     </div>

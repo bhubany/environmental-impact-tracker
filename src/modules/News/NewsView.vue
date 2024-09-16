@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import LoadMore from '@/components/buttons/LoadMore.vue'
+import LoadMore from '@/components/buttons/SecondaryButton.vue'
 import ContentWrapper from '@/components/ContentWrapper.vue'
 import LoadingComponent from '@/components/LoadingComponent.vue'
 import { newsData } from '@/shared/constants/newsData'
@@ -38,7 +38,7 @@ onMounted(async () => {
       <div class="flex flex-wrap items-stretch justify-center gap-8">
         <NewsCard v-for="article in paginatedNews" :key="article.source.id!" :data="article" />
       </div>
-      <LoadMore :label="'Load More'" :onClick="loadMore" :showButton="hasMore" />
+      <LoadMore label="Load More" :onClick="loadMore" :showButton="hasMore" />
     </div>
   </ContentWrapper>
 </template>
