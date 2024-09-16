@@ -161,7 +161,8 @@ export default {
         }
       },
       backgroundImage: {
-        'not-found': "url('@/assets/images/404-not-found.png')"
+        'not-found': "url('@/assets/images/404-not-found.png')",
+        hero: "url('@/assets/images/eit-hero.png')"
       },
       animation: {
         transition: 'transform 0.2s ease'

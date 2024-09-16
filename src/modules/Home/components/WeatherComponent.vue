@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import ContentWrapper from '@/components/ContentWrapper.vue'
 import { config } from '@/config'
 import type { Weather } from '@/shared/types/weather'
 import { getTimeInNPT } from '@/utils/dateTimeUtil'
@@ -13,9 +14,9 @@ defineProps({
 </script>
 <template>
   <section class="w-full">
-    <div class="max-w-screen-xl mx-auto p-4">
-      <div class="bg-white shadow rounded-md p-4">
-        <h2 class="text-xl font-bold text-green-700 mb-2">Current Weather Conditions</h2>
+    <ContentWrapper class="p-4 my-10">
+      <div class="bg-blue-50 shadow rounded-md py-10 px-4">
+        <h3 class="text-heading-3 font-heading text-green-700 mb-2">Current Weather Conditions</h3>
         <div class="border border-gray-400 p-4 rounded-md">
           <div class="text-center my-4">
             <h2 class="font-bold">{{ data.name }} , {{ data.sys.country }}</h2>
@@ -70,6 +71,6 @@ defineProps({
           </div>
         </div>
       </div>
-    </div>
+    </ContentWrapper>
   </section>
 </template>
