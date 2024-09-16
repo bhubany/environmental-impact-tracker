@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import markerIcon from '@/assets/icons/map-marker.svg'
 import type { Coordinate } from '@/shared/types/geo'
 import L from 'leaflet'
 import { onMounted } from 'vue'
@@ -28,12 +29,13 @@ const initMap = () => {
     attribution:
       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map)
-  const markerIcon = L.icon({
-    iconUrl: 'src/assets/icons/map-marker.svg',
+
+  const icon = L.icon({
+    iconUrl: markerIcon,
     iconSize: [50, 100]
   })
 
-  L.marker([lat, lng], { icon: markerIcon }).addTo(map)
+  L.marker([lat, lng], { icon }).addTo(map)
 }
 
 const handleSearch = () => {}

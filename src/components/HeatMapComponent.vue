@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import markerIcon from '@/assets/icons/map-marker.svg'
 import { type Coordinate } from '@/shared/types/geo'
 import type { Weather } from '@/shared/types/weather'
 import { debounce } from '@/utils'
@@ -26,8 +27,8 @@ const initMap = () => {
   const { latitude, longitude } = props.coordinate
   map.value = L.map('map').setView([latitude, longitude], 10)
 
-  const markerIcon = L.icon({
-    iconUrl: 'src/assets/icons/map-marker.svg',
+  const icon = L.icon({
+    iconUrl: markerIcon,
     iconSize: [50, 100]
   })
 
@@ -35,7 +36,7 @@ const initMap = () => {
     maxZoom: 18
   }).addTo(map.value)
 
-  L.marker([latitude, longitude], { icon: markerIcon }).addTo(map.value)
+  L.marker([latitude, longitude], { icon: icon }).addTo(map.value)
 
   // Initialize zoomLevel
   zoomLevel.value = map.value.getZoom()

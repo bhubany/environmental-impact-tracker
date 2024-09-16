@@ -14,7 +14,7 @@ const props = defineProps({
   class: [String],
   onClick: {
     type: Function as PropType<(event: MouseEvent) => void>,
-    required: true
+    default: () => {}
   }
 })
 </script>

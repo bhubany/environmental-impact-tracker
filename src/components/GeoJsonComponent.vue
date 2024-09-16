@@ -9,7 +9,6 @@ const map = ref<L.Map>()
 const initMap = () => {
   map.value = L.map('map').setView([26, 86], 10)
 
-  // Load tiles from OpenStreetMap
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 18
   }).addTo(map.value)
@@ -21,20 +20,15 @@ const initMap = () => {
       map.value?.setView([lat, lng], 10)
     })
   }
-
-  // Fetch GeoJSON data and add it to the map
-  // loadGeoJSON(map.value)
 }
 
-// Method to load GeoJSON and add temperature zones
 const loadGeoJSON = (map: L.Map) => {
   L.geoJSON(districtGeoJson, {
-    style: styleDistricts, // Set style based on temperature
-    onEachFeature: onEachFeature // Add popups for each feature
+    style: styleDistricts,
+    onEachFeature: onEachFeature
   }).addTo(map)
 }
 
-// Style districts based on temperature property
 const styleDistricts = (feature: any) => {
   return {
     fillColor: getTemperatureColor(feature.properties.temperature),
@@ -65,7 +59,6 @@ const getTemperatureColor = (temperature: number): string => {
                 : '#FFEDA0'
 }
 
-// Add a popup for each district with its temperature information
 const onEachFeature = (feature: any, layer: any) => {
   if (feature.properties && feature.properties.name && feature.properties.temperature) {
     layer.bindPopup(
@@ -74,7 +67,6 @@ const onEachFeature = (feature: any, layer: any) => {
   }
 }
 
-// Initialize the map after the component is mounted
 onMounted(() => {
   initMap()
   loadGeoJSON(map.value!)

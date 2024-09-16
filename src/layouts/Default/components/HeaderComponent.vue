@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import logo from '@/assets/logo.svg'
+import PrimaryButton from '@/components/buttons/PrimaryButton.vue'
 import { useAuth } from '@/composable/useAuth'
 import LoginButton from '@/layouts/Default/components/LoginButton.vue'
 import { menus } from '@/shared/constants/menu'
-import type { UserDetail } from '@/store/userStore'
+import type { UserDetail } from '@/shared/types/user'
 import { cn } from '@/utils'
 import { getUserDetails } from '@/utils/authenticationUtils'
 import { onMounted, ref } from 'vue'
@@ -75,9 +76,8 @@ onMounted(() => {
           {{ menu.title }}
         </RouterLink>
         <RouterLink
-          v-if="!isAuthenticated"
           @click="toggleHamburgerButton"
-          to="/login"
+          :to="`${isAuthenticated ? '/profile' : '/login'}`"
           :class="
             cn(
               'hover:underline border-b-[1px] border-gray-100 text-center',
@@ -85,18 +85,19 @@ onMounted(() => {
             )
           "
         >
-          Login
+          {{ isAuthenticated ? 'Profile' : 'Login' }}
         </RouterLink>
       </nav>
-      <div v-if="!isAuthenticated" class="hidden md:flex items-center justify-end">
-        <LoginButton />
+      <div class="hidden md:flex items-center justify-end">
+        <PrimaryButton v-if="isAuthenticated" to="/profile" title="Profile" />
+        <LoginButton v-else />
       </div>
     </div>
   </header>
 </template>
 
 <style>
-.router-link-active {
-  @apply font-bold md:text-white p-0 m-0;
+.router-link-exact-active {
+  @apply font-bold md:text-white m-0;
 }
 </style>
