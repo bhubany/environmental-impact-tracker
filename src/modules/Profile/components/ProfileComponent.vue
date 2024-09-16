@@ -7,8 +7,9 @@ import type { UserDetail } from '@/shared/types/user'
 import { useDetailStore } from '@/store/userStore'
 import { defineProps } from 'vue'
 import { useRouter } from 'vue-router'
-
+import { useToast } from 'vue-toast-notification'
 const router = useRouter()
+const toast = useToast()
 
 defineProps({
   user: {
@@ -21,6 +22,7 @@ const detailStore = useDetailStore()
 
 const handleLogout = () => {
   detailStore.clearUserDetails()
+  toast.success('Logout success`')
   router.push('/login')
 }
 </script>

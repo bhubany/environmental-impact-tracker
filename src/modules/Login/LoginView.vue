@@ -3,10 +3,12 @@ import ContentWrapper from '@/components/ContentWrapper.vue'
 import InfoComponent from '@/components/InfoComponent.vue'
 import { onMounted } from 'vue'
 import { useRouter } from 'vue-router'
+import { useToast } from 'vue-toast-notification'
 import { decodeCredential } from 'vue3-google-login'
 import { useDetailStore } from '../../store/userStore'
 
 const router = useRouter()
+const toast = useToast()
 
 export type GoogleAuthToken = {
   iss: string
@@ -58,6 +60,7 @@ const callback = async (response: any) => {
     family_name: userData.family_name,
     profilePic: profilePic
   })
+  toast.success('Login success!')
   router.push('/profile')
 }
 
