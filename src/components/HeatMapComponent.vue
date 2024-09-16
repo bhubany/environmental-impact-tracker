@@ -14,11 +14,10 @@ const zoomLevel = ref<number>(7)
 const props = defineProps({
   coordinate: {
     type: Object as () => Coordinate,
-    default: () => ({ latitude: 0, longitude: 0 })
+    required: true
   },
   weatherData: {
     type: Array as () => Weather[],
-    default: () => [],
     required: true
   }
 })

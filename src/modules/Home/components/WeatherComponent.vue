@@ -7,52 +7,7 @@ import { defineProps } from 'vue'
 defineProps({
   data: {
     type: Object as () => Weather,
-    required: true,
-    // eslint-disable-next-line vue/require-valid-default-prop
-    default: {
-      coord: {
-        lon: 87.2,
-        lat: 27.0
-      },
-      weather: [
-        {
-          id: 801,
-          main: 'Clouds',
-          description: 'few clouds',
-          icon: '02d'
-        }
-      ],
-      base: 'stations',
-      main: {
-        temp: 10.8,
-        feels_like: 302.8,
-        temp_min: 299.0,
-        temp_max: 300.5,
-        pressure: 1010,
-        humidity: 84,
-        sea_level: 1010,
-        grnd_level: 1006
-      },
-      visibility: 11000,
-      wind: {
-        speed: 2.9,
-        deg: 120,
-        gust: 3.5
-      },
-      clouds: {
-        all: 20
-      },
-      dt: 1725546183,
-      sys: {
-        country: 'NP',
-        sunrise: 1725494479,
-        sunset: 1725539787
-      },
-      timezone: 20700,
-      id: 1283686,
-      name: 'Dhankuta',
-      cod: 200
-    }
+    required: true
   }
 })
 </script>
@@ -76,7 +31,7 @@ defineProps({
               <p class="">{{ data.weather[0].description }}</p>
             </div>
             <div class="flex flex-col justify-center items-center">
-              <h2 class="text-3xl font-bold text-green-600">{{ data.main.temp }}°C</h2>
+              <h2 class="text-3xl font-bold text-green-600">{{ data.main.temp.toFixed(2) }}°C</h2>
               <p class="">
                 Feels like: {{ data.main.feels_like }}
                 °C

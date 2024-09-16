@@ -19,7 +19,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="w-52 border shadow-lg rounded-md bg-green-50">
+  <div class="w-52 border shadow-lg rounded-lg bg-green-50">
     <div class="p-4 w-full flex flex-col gap-4">
       <div class="flex justify-center items-center">
         <i :class="cn('pi', `pi-${data.icon}`, 'text-green-500 text-3xl')"></i>
