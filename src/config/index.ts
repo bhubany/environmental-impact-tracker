@@ -7,5 +7,7 @@ export const config = {
   newsApiUrl: import.meta.env.VITE_NEWS_API_URL,
   newsApiKey: import.meta.env.VITE_NEWS_API_KEY,
   carbonInterfaceApiUrl: import.meta.env.VITE_CARBON_INTERFACE_API_URL,
-  carbonInterfaceApiKey: import.meta.env.VITE_CARBON_INTERFACE_API_KEY
+  carbonInterfaceApiKey: import.meta.env.VITE_CARBON_INTERFACE_API_KEY,
+  googleAuthClientId: import.meta.env.VITE_GOOGLE_CLIENT_ID,
+  googleAuthClientSecret: import.meta.env.VITE_GOOGLE_CLIENT_SECRET
 }
