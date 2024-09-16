@@ -1,5 +1,6 @@
 import DefaultLayout from '@/layouts/Default/DefaultLayout.vue'
 import aboutRoute from '@/modules/About/router'
+import contactRoute from '@/modules/Contact/router'
 import homeRoute from '@/modules/Home/router'
 import loginRoute from '@/modules/Login/router'
 import mapRoute from '@/modules/Map/router'
@@ -19,7 +20,7 @@ const router = createRouter({
       name: 'public',
       component: DefaultLayout,
       redirect: '/',
-      children: [...homeRoute, ...newsRoute, ...aboutRoute, ...loginRoute]
+      children: [...homeRoute, ...newsRoute, ...aboutRoute, ...loginRoute, ...contactRoute]
     },
     { ...mapRoute[0] },
     {
