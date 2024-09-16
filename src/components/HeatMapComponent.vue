@@ -26,11 +26,16 @@ const initMap = () => {
   const { latitude, longitude } = props.coordinate
   map.value = L.map('map').setView([latitude, longitude], 10)
 
+  const markerIcon = L.icon({
+    iconUrl: 'src/assets/icons/map-marker.svg',
+    iconSize: [50, 100]
+  })
+
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 18
   }).addTo(map.value)
 
-  L.marker([latitude, longitude]).addTo(map.value)
+  L.marker([latitude, longitude], { icon: markerIcon }).addTo(map.value)
 
   // Initialize zoomLevel
   zoomLevel.value = map.value.getZoom()

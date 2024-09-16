@@ -28,8 +28,12 @@ const initMap = () => {
     attribution:
       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map)
+  const markerIcon = L.icon({
+    iconUrl: 'src/assets/icons/map-marker.svg',
+    iconSize: [50, 100]
+  })
 
-  L.marker([lat, lng]).addTo(map)
+  L.marker([lat, lng], { icon: markerIcon }).addTo(map)
 }
 
 const handleSearch = () => {}
