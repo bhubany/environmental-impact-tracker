@@ -1,64 +1,47 @@
 <script setup lang="ts">
 import ContentWrapper from '@/components/ContentWrapper.vue'
-import { config } from '@/config'
+import InfoComponent from '@/components/InfoComponent.vue'
 import { onMounted } from 'vue'
+import { decodeCredential } from 'vue3-google-login'
 
-const clientId = config.googleAuthClientId
+export type GoogleAuthToken = {
+  iss: string
+  azp: string
+  aud: string
+  sub: string
+  email: string
+  email_verified: boolean
+  nbf: number
+  name: string
+  picture: string
+  given_name: string
+  family_name: string
+  iat: number
+  exp: number
+  jti: string
+}
 
-onMounted(() => {
-  const loadGoogleScript = () => {
-    return new Promise((resolve) => {
-      const script = document.createElement('script')
-      script.src = 'https://accounts.google.com/gsi/client'
-      script.async = true
-      script.defer = true
-      script.onload = resolve
-      document.head.appendChild(script)
-    })
-  }
+const callback = (response: any) => {
+  const userData = decodeCredential(response.credential) as GoogleAuthToken
+  console.log('Handle the userData', userData)
+}
 
-  loadGoogleScript().then(() => {
-    window?.google!.accounts.id.initialize({
-      client_id: clientId,
-      callback: handleCredentialResponse
-    })
-
-    window.google!.accounts.id.renderButton(document.querySelector('.g_id_signin')!, {
-      theme: 'outline',
-      size: 'large'
-    })
-  })
-
-  const handleCredentialResponse = (response: any) => {
-    const token = response.credential
-    console.log('Google User Token:', token)
-  }
-})
+onMounted(() => {})
 </script>
 
 <template>
   <ContentWrapper>
     <div class="absolute h-screen w-full inset-0 flex justify-center items-center">
       <div
-        class="flex flex-col justify-center items-center relative bg-slate-50 m-10 w-full py-20 rounded-lg shadow-lg max-w-2xl"
+        class="flex flex-col justify-center items-center relative bg-slate-50 m-10 px-4 w-full py-20 md:py-40 rounded-lg shadow-lg md:shadow-2xl max-w-2xl"
       >
-        <h1 class="text-heading-3 font-heading">Sigin using Google</h1>
-        <div
-          id="g_id_onload"
-          :data-client_id="clientId"
-          data-login_uri=""
-          data-auto_prompt="false"
-        ></div>
-
-        <div
-          class="g_id_signin"
-          data-type="standard"
-          data-size="large"
-          data-theme="outline"
-          data-text="sign_in_with"
-          data-shape="rectangular"
-          data-logo_alignment="left"
-        ></div>
+        <InfoComponent class="mx-4 mb-10">
+          We value your privacy! This site does not store any of your personal information on our
+          servers. All your data is securely stored in your browser only. You’re in control, and no
+          information is shared or saved anywhere else. Enjoy peace of mind while using our site!
+        </InfoComponent>
+        <h1 class="text-heading-3 font-heading mb-4">Sigin using Google</h1>
+        <GoogleLogin :callback="callback" prompt />
       </div>
     </div>
   </ContentWrapper>
