@@ -32,9 +32,10 @@ cd ./environmental-impact-tracker
 npm install
 ```
 
-### Create `.env` file and copy environment variables from `.example.env`
+### Environment setup
 
-### Replace dummy variable values in `.env` file with actual values
+- Create `.env` file and copy environment variables from `.example.env`
+- Replace dummy variable values in `.env` file with actual values
 
 ### Compile and Hot-Reload for Development
 
