@@ -10,7 +10,7 @@ defineProps({
     type: Object as () => Coordinate,
     required: true
   },
-  weather: {
+  weathers: {
     type: Array as () => Weather[],
     required: true
   }
@@ -32,9 +32,9 @@ defineProps({
       </div>
       <div class="flex flex-col py-10 px-8 gap-2 overflow-clip h-[500px] md:h-[700px]">
         <HeatMapComponent
-          v-if="coordinate && weather"
+          v-if="coordinate && weathers"
           :coordinate="coordinate"
-          :weatherData="weather"
+          :weatherData="weathers"
         />
       </div>
     </ContentWrapper>

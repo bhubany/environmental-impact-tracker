@@ -20,7 +20,7 @@ defineProps({
         <div class="border border-gray-400 p-4 rounded-md">
           <div class="text-center my-4">
             <h2 class="font-bold">{{ data.name }} , {{ data.sys.country }}</h2>
-            <p>Longitude: {{ data.coord.lat }}, Latitude: {{ data.coord.lon }}</p>
+            <p>Longitude: {{ data.coord.lat }}°, Latitude: {{ data.coord.lon }}°</p>
           </div>
           <div class="flex justify-around items-center m-4">
             <div class="flex flex-col justify-center items-center">
@@ -49,7 +49,7 @@ defineProps({
               </div>
               <div class="flex flex-col items-center justify-center">
                 <h2 class="font-bold text-green-600">Other Conditions</h2>
-                <p>Humidity: {{ data.visibility }} km</p>
+                <p>Humidity: {{ data.main.humidity }} %</p>
                 <p>Pressure: {{ data.main.pressure }} hPa</p>
                 <p>Sea Level: {{ data.main.sea_level }} hPa</p>
                 <p>Ground Level: {{ data.main.grnd_level }} hPa</p>
@@ -63,7 +63,7 @@ defineProps({
               </div>
               <div class="flex flex-col items-center justify-center">
                 <h2 class="font-bold text-green-600">Visibility & Time</h2>
-                <p>Visibility: {{ data.visibility }} km</p>
+                <p>Visibility: {{ data.visibility }} m</p>
                 <p>Sunrise: {{ getTimeInNPT(data.sys.sunrise) }}</p>
                 <p>Sunset: {{ getTimeInNPT(data.sys.sunset) }}</p>
               </div>

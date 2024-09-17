@@ -6,6 +6,7 @@ import HotspotComponent from '@/modules/Home/components/HotspotComponent.vue'
 import MissionComponent from '@/modules/Home/components/MissionComponent.vue'
 import WeatherComponent from '@/modules/Home/components/WeatherComponent.vue'
 import { getUserCoordinates } from '@/shared/apis/geoApi'
+import { fetchWeatherData } from '@/shared/apis/weatherApi'
 import { features } from '@/shared/constants/featureData'
 import type { Coordinate } from '@/shared/types/geo'
 import type { Weather } from '@/shared/types/weather'
@@ -14,11 +15,14 @@ import { onMounted, ref } from 'vue'
 
 const userCoordinates = ref<Coordinate>()
 const isLoading = ref<boolean>(true)
-const weather = ref<Weather[]>()
+const weathers = ref<Weather[]>()
+const weather = ref<Weather | null>(null)
 
 onMounted(async () => {
   userCoordinates.value = await getUserCoordinates()
-  weather.value = getWeatherData()
+  weather.value = await fetchWeatherData(userCoordinates.value)
+  weathers.value = getWeatherData() // get sample data
+  weathers.value.push(weather.value!)
   isLoading.value = false
 })
 </script>
@@ -28,8 +32,8 @@ onMounted(async () => {
   <div v-else class="w-full">
     <HeroComponent />
     <MissionComponent />
-    <HotspotComponent :coordinate="userCoordinates!" :weather="weather!" />
-    <WeatherComponent :data="weather![weather?.length! - 1]" />
+    <HotspotComponent :coordinate="userCoordinates!" :weathers="weathers!" />
+    <WeatherComponent :data="weather!" />
     <FeatureComponent :features="features" />
   </div>
 </template>

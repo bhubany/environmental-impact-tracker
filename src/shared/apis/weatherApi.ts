@@ -8,7 +8,7 @@ export const fetchWeatherData = async (coord: Coordinate): Promise<Weather | nul
   const { data, error, fetchData, loading } = useApi<Weather>(config.openWeatherApiUrl)
   try {
     await fetchData(
-      `weather?lat=${coord.latitude}&lon=${coord.longitude}&appid=${config.openWeatherApiKey}`
+      `weather?lat=${coord.latitude}&lon=${coord.longitude}&appid=${config.openWeatherApiKey}&units=metric`
     )
     if (error.value) {
       // console.error('Error fetching IP location:', error.value.message)
