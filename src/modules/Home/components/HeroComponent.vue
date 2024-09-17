@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import PrimaryButton from '@/components/buttons/PrimaryButton.vue'
 import ContentWrapper from '@/components/ContentWrapper.vue'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
 </script>
 
 <template>
@@ -19,7 +22,7 @@ import ContentWrapper from '@/components/ContentWrapper.vue'
             Join us in making a difference by tracking your carbon footprint and supporting green
             initiatives.
           </h4>
-          <PrimaryButton title="Learn More" to="about" />
+          <PrimaryButton title="Learn More" @click="router.push('/about')" />
         </div>
       </div>
     </ContentWrapper>
