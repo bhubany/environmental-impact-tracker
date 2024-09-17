@@ -51,6 +51,7 @@ npm run dev
 - Replace dummy environment variable values in docker-compose.yml file with actual value
 - To build docker image run : `docker-compose build`
 - To run docker container: `docker-compose up`
+- Once container is running visit: [http://localhost:3000/](http://localhost:3000/ 'http://localhost:3000/')
 
 ### Type-Check, Compile and Minify for Production
 
