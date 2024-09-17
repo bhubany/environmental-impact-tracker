@@ -31,14 +31,16 @@ onMounted(() => {
 </script>
 
 <template>
-  <header :class="cn('md:bg-green-600 bg-skin-fill w-full sticky top-0 z-50 p-4')">
+  <header :class="cn('md:bg-skin-header-large bg-skin-header-small w-full sticky top-0 z-50 p-4')">
     <div :class="cn('max-w-screen-xl  md:flex mx-auto')">
       <div class="flex justify-between items-center py-3 px-8 w-full">
         <RouterLink to="/" :class="cn('flex justify-center items-center gap-2')">
           <img :src="logo" alt="Environmental Impact Tracker Logo" width="24" height="auto" />
           <h1
             :class="
-              cn('md:text-xl lg:text-2xl font-bold text-lg text-skin-primary md:text-gray-100')
+              cn(
+                'md:text-xl lg:text-2xl font-bold text-lg text-skin-header-title-small md:text-skin-header-title-large'
+              )
             "
           >
             Environmental Impact Tracker
@@ -47,13 +49,13 @@ onMounted(() => {
         <ThemeSwitcher class="md:hidden" />
         <i
           v-if="showhamburgerButton"
-          class="pi pi-bars font-black md:!hidden cursor-pointer"
+          class="pi pi-bars md:!hidden cursor-pointer text-skin-hamburger-button"
           style="font-size: 1.5rem; font-weight: bold"
           @click="toggleHamburgerButton"
         ></i>
         <i
           v-else
-          class="pi pi-times font-black md:!hidden cursor-pointer"
+          class="pi pi-times md:!hidden cursor-pointer text-skin-hamburger-button"
           style="font-size: 1.5rem; font-weight: bold"
           @click="toggleHamburgerButton"
         ></i>
@@ -61,7 +63,7 @@ onMounted(() => {
       <nav
         :class="
           cn(
-            'flex flex-col justify-center items-center gap-4 bg-green-200 text-green-600 md:text-gray-100',
+            'flex flex-col justify-center items-center gap-4 bg-skin-secondary text-skin-primary md:text-skin-active',
             showhamburgerButton ? 'hidden md:flex' : 'flex',
             'md:sticky md:top-0 absolute w-full  left-0 right-0 p-4',
             'md:flex-row md:bg-inherit'
@@ -103,6 +105,6 @@ onMounted(() => {
 
 <style>
 .router-link-exact-active {
-  @apply font-bold md:text-white m-0;
+  @apply font-bold md:text-skin-active m-0;
 }
 </style>

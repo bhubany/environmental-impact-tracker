@@ -4,31 +4,33 @@
 
 @layer base {
   :root {
-    --primary-color: #399256;
-    --secondary-color: #2ecc71;
-    --background-color: #f1c40f;
-    --text-color: #333;
-    --text-color-secondary: #666;
-    --color-text-base: #ffffff;
-    --color-text-muted: #c7d2fe;
-    --color-text-inverted: #4f46e5;
-    --color-fill: #fff;
-    --color-button-accent: #ffffff;
-    --color-button-accent-hover: #eef2ff;
-    --color-button-muted: 99, 102, 241;
+    /* --primary-color: theme(colors.green.500); */
+    --secondary-color: theme(colors.white);
+    --hamburger-btn-color: theme(colors.black);
+    --header-bg-large: theme(colors.green.600);
+    --header-bg-small: theme(colors.white);
+    --header-title-large: theme(colors.white);
+    --header-title-small: theme(colors.green.700);
+    --color-text-base: theme(colors.white);
+    --color-text-primary: theme(colors.green.600);
+    --color-text-active: theme(colors.white);
+    --color-btn-primary: theme(colors.green.400);
+    --bg-secondary: theme(colors.green.100);
+    --color-btn-primary-hover: theme(colors.green.700);
   }
   .dark-theme {
-    --primary-color: #ddd;
-    --secondary-color: #2fcc71;
-    --background-color: #1ac40f;
-    --text-color: #444;
-    --text-color-secondary: #666;
-    --color-text-base: #eb0404;
-    --color-text-muted: #c7d2fe;
-    --color-text-inverted: #4f46e5;
-    --color-fill: #0a0a0a;
-    --color-button-accent: #ffffff;
-    --color-button-accent-hover: #eef2ff;
-    --color-button-muted: #6366f1;
+    /* --primary-color: theme(colors.gray.500); */
+    --secondary-color: theme(colors.green.500);
+    --hamburger-btn-color: theme(colors.white);
+    --header-bg-large: theme(colors.gray.950);
+    --header-bg-small: theme(colors.gray.950);
+    --bg-secondary: theme(colors.gray.500);
+    --header-title-large: theme(colors.gray.100);
+    --header-title-small: theme(colors.gray.200);
+    --color-text-base: theme(colors.black);
+    --color-text-primary: theme(colors.gray.950);
+    --color-text-active: theme(colors.white);
+    --color-btn-primary: theme(colors.gray.950);
+    --color-btn-primary-hover: theme(colors.gray.100);
   }
 }

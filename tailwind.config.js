@@ -2,6 +2,7 @@
 
 import typography from '@tailwindcss/typography'
 
+// eslint-disable-next-line no-unused-vars
 function withOpacity(color) {
   return ({ opacityValue }) => {
     if (opacityValue !== undefined) {
@@ -37,31 +38,24 @@ export default {
       },
       textColor: {
         skin: {
-          primary: 'var(--primary-color)',
           base: 'var(--color-text-base)',
+          primary: 'var(--color-text-primary)',
+          active: 'var(--color-text-active)',
           muted: 'var(--color-text-base)',
-          inverted: 'var(--color-text-base)'
+          inverted: 'var(--color-text-base)',
+          'hamburger-button': 'var(--hamburger-btn-color)',
+          'hamburger-button-hover': 'var(--hamburger-btn-color-hover)',
+          'header-title-large': 'var(--header-title-large)',
+          'header-title-small': 'var(--header-title-small)'
         }
       },
       backgroundColor: {
         skin: {
-          fill: 'var(--color-fill)',
-          'button-accent': 'var(--color-button-accent)',
-          'button-secondary': 'var(--color-button-secondary)',
-          'button-tertiary': 'var(--color-button-tertiary)',
-          'button-ghost': 'var(--color-button-ghost)',
-          'button-disabled': 'var(--color-button-disabled)',
-          'button-active': 'var(--color-button-active)',
-          'button-hover': 'var(--color-button-hover)',
-          'button-focus': 'var(--color-button-focus)',
-          'button-pressed': 'var(--color-button-pressed)',
-          'button-checked': 'var(--color-button-checked)',
-          'button-checked-active': 'var(--color-button-checked-active)',
-          'button-checked-hover': 'var(--color-button-checked-hover)',
-          'button-checked-focus': 'var(--color-button-checked-focus)',
-          'button-checked-pressed': 'var(--color-button-checked-pressed)',
-          'button-checked-disabled': 'var(--color-button-checked-disabled)',
-          'button-muted': withOpacity('--color-button-muted')
+          'header-large': 'var(--header-bg-large)',
+          'header-small': 'var(--header-bg-small)',
+          'button-primary': 'var(--color-btn-primary)',
+          'button-primary-hover': 'var(--color-btn-primary-hover)',
+          secondary: 'var(--bg-secondary)'
         }
       },
       gradientColorStops: {
