@@ -19,7 +19,7 @@ import ContentWrapper from '@/components/ContentWrapper.vue'
             Join us in making a difference by tracking your carbon footprint and supporting green
             initiatives.
           </h4>
-          <PrimaryButton title="Learn More" to="/about" />
+          <PrimaryButton title="Learn More" to="about" />
         </div>
       </div>
     </ContentWrapper>
