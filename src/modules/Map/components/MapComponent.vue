@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import markerIcon from '@/assets/icons/map-marker.svg'
+import gpsIcon from '@/assets/icons/gps.png'
 import type { Coordinate } from '@/shared/types/geo'
 import L from 'leaflet'
 import { onMounted } from 'vue'
@@ -31,8 +31,8 @@ const initMap = () => {
   }).addTo(map)
 
   const icon = L.icon({
-    iconUrl: markerIcon,
-    iconSize: [50, 100]
+    iconUrl: gpsIcon,
+    iconSize: [40, 80]
   })
 
   L.marker([lat, lng], { icon }).addTo(map)

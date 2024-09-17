@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import markerIcon from '@/assets/icons/map-marker.svg'
+import gpsIcon from '@/assets/icons/gps.png'
 import { type Coordinate } from '@/shared/types/geo'
 import type { Weather } from '@/shared/types/weather'
 import { debounce } from '@/utils'
@@ -28,8 +28,8 @@ const initMap = () => {
   map.value = L.map('map').setView([latitude, longitude], 10)
 
   const icon = L.icon({
-    iconUrl: markerIcon,
-    iconSize: [50, 100]
+    iconUrl: gpsIcon,
+    iconSize: [40, 80]
   })
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

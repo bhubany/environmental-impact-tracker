@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import logo from '@/assets/logo.svg'
+import logo from '@/assets/icons/eit-logo-cropped.svg'
 import PrimaryButton from '@/components/buttons/PrimaryButton.vue'
 import ThemeSwitcher from '@/components/ThemeSwitcher.vue'
 import { useAuth } from '@/composable/useAuth'
@@ -33,9 +33,14 @@ onMounted(() => {
 <template>
   <header :class="cn('md:bg-skin-header-large bg-skin-header-small w-full sticky top-0 z-50 p-4')">
     <div :class="cn('max-w-screen-xl  md:flex mx-auto')">
-      <div class="flex justify-between items-center py-3 px-8 w-full">
+      <div class="flex justify-between items-center px-8 w-full">
         <RouterLink to="/" :class="cn('flex justify-center items-center gap-2')">
-          <img :src="logo" alt="Environmental Impact Tracker Logo" width="24" height="auto" />
+          <img
+            :src="logo"
+            alt="Environmental Impact Tracker Logo"
+            height="auto"
+            class="w-14 !m-0 mr-2 text-white bg-white p-1 rounded-full"
+          />
           <h1
             :class="
               cn(
