@@ -1,6 +1,6 @@
 # Environmental Impact Tracker
 
-This template should help get you started developing with Vue 3 in Vite.
+[![Alt text](src/assets/images/eit-cover.png)]()
 
 ## Recommended IDE Setup
 
@@ -16,9 +16,25 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
-```sh
+### clone repo
+
+    `git clone https://github.com/bhubany/environmental-impact-tracker.git`
+
+### Change directory to project directory
+
+```
+cd ./environmental-impact-tracker
+```
+
+### Install Dependencies
+
+```
 npm install
 ```
+
+### Create `.env` file and copy environment variables from `.example.env`
+
+### Replace dummy variable values in `.env` file with actual values
 
 ### Compile and Hot-Reload for Development
 
@@ -26,10 +42,20 @@ npm install
 npm run dev
 ```
 
+### Visit dev URL
+
+[http://localhost:3000/](http://localhost:3000/ 'http://localhost:3000/')
+
 ### Type-Check, Compile and Minify for Production
 
 ```sh
 npm run build
+```
+
+### Build preview
+
+```
+npm run preview
 ```
 
 ### Lint with [ESLint](https://eslint.org/)
