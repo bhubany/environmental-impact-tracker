@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import ContentWrapper from '@/components/ContentWrapper.vue'
+import { useRouter } from 'vue-router'
+const router = useRouter()
 </script>
 
 <template>
@@ -17,7 +19,7 @@ import ContentWrapper from '@/components/ContentWrapper.vue'
         </p>
         <button
           class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 !px-6 rounded"
-          @click="$router.push('/')"
+          @click="router.push('/')"
         >
           Back to Safety
         </button>
